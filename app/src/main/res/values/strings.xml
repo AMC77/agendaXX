@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">responsiveDesign</string>
+    <string name="textViewTittle">My Notes</string>
+    <string name="btnEntrar">entrar</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintContraseña">Contraseña</string>
+    <string name="title_activity_notas">NotasActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_notas">tituloNotas</string>
+    <string name="title_favoritos">tituloFavoritos</string>
+    <string name="title_acount_users">tittleUsers</string>
+    <string name="title_user_profile">tituloUsuario</string>
+    <string name="editTextTituloNota">Titulo</string>
+    <string name="edittextContenidoNota">Contenido de la Nota</string>
+    <string name="radioButtonRojo">Rojo</string>
+    <string name="action_add_nota">Nueva nota</string>
+    <string name="textBotonGroup">Seleccione el color de la nota</string>
+    <string name="botonVerde">Verde</string>
+    <string name="botonAzul">Azul</string>
+    <string name="laNotaEsFavorita">La nota es Favorita</string>
+    <string name="fire">Guardar</string>
+    <string name="cancel">Cancelar</string>
+</resources>
