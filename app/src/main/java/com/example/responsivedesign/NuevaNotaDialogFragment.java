@@ -27,11 +27,11 @@ public class NuevaNotaDialogFragment extends DialogFragment {
     private NuevaNotaDialogFragment mViewModel;
     public static NuevaNotaDialogFragment newInstance(){return new NuevaNotaDialogFragment}
 
-    @Override     // ---- ON ACTIVITYCREATED ----
+    /*@Override     // ---- ON ACTIVITYCREATED ----
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-    }
+    }*/
 
 
     private View view;
@@ -46,8 +46,14 @@ public class NuevaNotaDialogFragment extends DialogFragment {
         return inflater.inflate(R.layout.nueva_nota_dialog_fragment, container, false);
     }
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState){
+        super.onActivityCreated(savedInstanceState);
+        mViewModel = ViewModelProvider.of(this).get(NuevaNotaDialogViewModel.class);
+        //TODO : Use the ViewModel
+    }
 
-    public class NuevaNotaDialogFragment  extends DialogFragment {
+
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             // Use the Builder class for convenient dialog construction
@@ -100,6 +106,6 @@ public class NuevaNotaDialogFragment extends DialogFragment {
             // Create the AlertDialog object and return it
             return builder.create();
         }
-    }
+
 
 }
